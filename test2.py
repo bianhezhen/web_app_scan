@@ -126,7 +126,5 @@ if __name__ == "__main__":
 
     for host in hosts:
         lines = NmapPortServiceScan(host)
-
         scanFile.write(lines)
-
     scanFile.close()
